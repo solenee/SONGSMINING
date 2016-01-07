@@ -1,0 +1,57 @@
+Projet : classification de chansons à l’aide de motifs émergents
+
+OBJECTIF : développer un classifieur chanson -> interprète
+
+EVALUATION : Etant donnée 1 chanson et un ensemble de chansons de 2 ou 3 artistes, retrouver l'interprète de la chanson en entrée
+
+A RENDRE : 
+Rapport écrit contenant :
+1- des statistiques sur les donn ́ees choisies (découpées en corpus d’apprentissage et en corpus de test), en termes de nombre de séquences, taille des séquences, nombre de motifs extraits et nombre de motifs émergents sélectionnés (pour chacun des paramétrages évalués)
+2- une présentation des résultats obtenus pour les 3 cas de test définis précédemment, en comparant différents classifieurs construits (chaque
+classifieur correspond à un paramétrage des pré-traitements et de l’extraction de motifs)
+
+DEADLINE : 8/01/2016 durée: 2 mois
+
+VOCABULAIRE :
+- séquence : unité de traitement. On va extraire des motifs sur une séquence
+
+ETAPES :
+1- Constitution d'une unique macro-test
+* choisir un artiste principal A, un artiste B dont le style se rapproche de celui de A et un artiste C au style plus éloigné de celui de A (C1-3, D1-4)
+2- Pré-processing des corpus : découpage en séquence (D5-)
+* Contraintes :
+C1 : Avoir les paroles de 4 albums par artiste choisi
+C2 : Pour un corpus donné, toutes les chansons doivent être dans la même langue
+* Directives d'implémentation :
+D1 : le corpus d’apprentissage de chaque artiste correspond à un fichier dans lequel ont ́ete fusionnés les fichiers des chansons de deux albums choisis parmi les quatre ainsi que la moitié des chansons d’un troisième album ; on obtient ainsi trois corpus d’ap-
+prentissage.
+D2 : le corpus de test de chaque artiste correspond à un répertoire contenant les chansons des albums restants (la moitié du troisième album et le quatrième album) ; on obtient ainsi un répertoire par artiste (avec une chanson par fichier).
+D3 : le premier fichier de référence contient la liste des chansons de test de l’artiste principal, le deuxième fichier de référence contient la liste des chansons de test du troisième album de l’artiste principal et le troisième fichier de référence contient la liste des
+chansons du quatrième album de l’artiste principal.
+D4 : un macro-test = 3 corpus
+D5 : une séquence = une ligne des paroles
+
+ORGANISATION : 
+- récolte des paroles de chansons
+A : Beyoncé Albums = {}
+http://www.beyonce.com/album/beyonce/?media_view=songs
+A-1 : 
+A-2 : 
+A-3 : 
+A-4 :
+B : Rihanna Albums = {2005 : Music Of The Sun, 2006 : A Girl Like Me, 2007 : Good Girl Gone Bad, 2009 : Rated R, 2010 : Loud, 2011 : Talk That Talk, 2012 : Unapologetic}
+B-1 : 
+B-2 : 
+B-3 : 
+B-4 :
+C : Les Beatles
+C-1 : 
+C-2 : 
+C-3 : 
+C-4 :
+D : Eminem Album = {1996 : Infinite, 1999 : The Slim Shady LP, 2000 : The Marshall Mathers LP, 2002 : The Eminem Show, 2004 : Encore, 2009 : Relapse, 2010 : Recovery, 2013 : The Marshall Mathers LP 2}
+D-1 : 
+D-2 : 
+D-3 : 
+D-4 :
+
